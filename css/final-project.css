@@ -2,24 +2,15 @@
     font-family: 'Poiret One', cursive;
     src: 
 } */
-
-body {
+body{
     margin:0;
     padding:0;
 }
-
 html{
     margin:0;
     padding:0;
 }
-
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-    }
-}
-
-#background {
+#background{
     position: fixed;
     top: 0;
     left: 0;
@@ -27,12 +18,11 @@ html{
     height: 100%;
     background-image: url("../img/background.png");
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-position: center;
+    background-size: cover;
     opacity: 0.56;
     filter:alpha(opacity=56);
 }
-
 .cv{
     font-family: 'Poiret One' bold;
     font-size: 40px;
@@ -40,9 +30,8 @@ html{
     color: #5b5b5b;
     position: absolute;
     top:130px; 
-    left:1500px; 
+    left:1270px; 
 }
-
 .pf{
     font-family: 'Poiret One' bold;
     font-size: 40px;
@@ -50,32 +39,28 @@ html{
     color: #5b5b5b;
     position: absolute;
     top:130px; 
-    left:1600px; 
+    left:1375px; 
 }
 .row{
     color:#5b5b5b;
 }
-
-.column {
+.column{
     float: left;
     width: 50%;
 }
-
 h2{
-    font-family: 'Poiret One', cursive;
+    font-family: 'Poiret One';
     font-size: 40px;
     text-align: center;
     color: #5b5b5b;
 }
-
 h3{
     font-family: 'Poiret One';
-    font-size: 35px;
+    font-size: 25px;
     color: #5b5b5b;
     text-align: end;
-    padding-right: 150px;
+    padding-right: 250px;
 }
-
 hr{
     color:#5b5b5b;
     margin-right: 50px;
@@ -88,7 +73,6 @@ h5{
     text-align: left;
     padding-left: 10px;
 }
-
 p{
     font-family: 'Raleway';
     font-size: 14px;
@@ -96,16 +80,76 @@ p{
     color: #5b5b5b;
     padding-left: 10px;
 }
-
-#container{ 
-    position: center;
+#container-fluid{ 
+    height: 800px;
+    width: 1400px;
     background-color: white;
     opacity: .86;
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 225px;
     margin-top: 200px;
-    width: 1875px;
-    height: 645px;
     border: 1px solid black;
     border-radius: 20px; 
 }
+#container{
+    padding-top: 200px;
+}
+.progress {
+    position: relative;
+	height: 25px;
+}
+.progress > .progress-type {
+	position: absolute;
+	left: 0px;
+	font-weight: 800;
+	padding: 3px 30px 2px 10px;
+	color: rgb(255, 255, 255);
+	background-color: rgba(25, 25, 25, 0.2);
+}
+.progress > .progress-completed{
+	position: absolute;
+	right: 0px;
+	font-weight: 800;
+	padding: 3px 10px 2px;
+}
+.skills{
+    font-family: 'Poiret One';
+    font-size: 40px;
+    text-align: center;
+    color: #5b5b5b;
+}
+ #mail{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    position: relative; 
+    text-decoration-line: none;  
+}
+#phone{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 20px;
+    color: white;
+    position: relative;   
+    text-decoration-line: none; 
+}
+#link{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-left: 900px;
+    color: white;
+    position: relative;   
+    text-decoration-line: none; 
+}
+
+/* @media screen and (max-width: 992px){
+    #mail,#phone,#link{
+        font-size: 20px;
+        margin-top: 10px;
+        text-align: center;
+        color: white;
+        position: absolute;   
+        text-decoration-line: none;        
+    }
+} */
