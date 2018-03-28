@@ -2,15 +2,15 @@
     font-family: 'Poiret One', cursive;
     src: 
 } */
-body{
+body {
     margin:0;
     padding:0;
 }
-html{
+html {
     margin:0;
     padding:0;
 }
-.cv-container{
+.cv-container {
     background-position: fixed;
     top: 0;
     left: 0;
@@ -23,11 +23,7 @@ html{
     opacity: 0.56;
     filter:alpha(opacity=56);
 }
-/* .text-box{
-    position: relative;
-    right: 500px; */
-/* } */
-.cv{
+/* .cv{
     font-family: 'Poiret One' bold;
     font-size: 40px;
     color:  #252525;
@@ -39,61 +35,62 @@ html{
     left:50%; */
     /* left: 90px;
     top: 146px; */
-}
+/* }
 .pf{
     font-family: 'Poiret One' bold;
     font-size: 40px;
     color: #252525;
     position: relative;
-    text-align: right;
+    text-align: right; */
     /* padding-right: 250px; */
     /* top: 50px;
-    right: 160px; */
-}
-h2{
+    right: 160px; 
+}*/ 
+
+h2 {
     font-family: 'Poiret One';
     font-size: 60px;
     text-align: center;
     color: #5b5b5b;
 }
-h3{
+h3 {
     font-family: 'Poiret One';
     font-size: 25px;
     color: #5b5b5b;
     text-align: right;
     padding-right: 40px;
 }
-hr{
+hr {
     color: #5b5b5b;
     margin-right: 50px;
     margin-left: 50px;
 }
-h5{
+h5 {
     font-family: 'Poiret One';
     font-size: 50px;
     color: #5b5b5b;
     text-align: left;
     padding-left: 10px;
 }
-p{
+p {
     font-family: 'Raleway';
     font-size: 20px;
     text-align: left;
     color: #5b5b5b;
     padding-left: 10px;
 }
-.display{ 
+.display { 
     background-color: white;
     opacity: .86;
     /* margin-top: 50px; */
     border: 1px solid black;
     border-radius: 20px; 
 }
-.progress{
+.progress {
     position: relative;
 	height: 25px;
 }
-.progress > .progress-type{
+.progress > .progress-type {
 	position: absolute;
 	left: 0px;
 	font-weight: 800;
@@ -101,19 +98,19 @@ p{
 	color: rgb(255, 255, 255);
 	background-color: rgba(25, 25, 25, 0.2);
 }
-.progress > .progress-completed{
+.progress > .progress-completed {
 	position: absolute;
 	right: 0px;
 	font-weight: 800;
 	padding: 3px 10px 2px;
 }
-.skills{
+.skills {
     font-family: 'Poiret One';
     font-size: 40px;
     text-align: center;
     color: #5b5b5b;
 }
- #mail{
+ #mail {
     font-size: 40px;
     margin-top: 10px;
     margin-left: 30px;
@@ -121,7 +118,7 @@ p{
     position: relative; 
     text-decoration-line: none;  
 }
-#phone{
+#phone {
     font-size: 40px;
     margin-top: 10px;
     margin-left: 20px;
@@ -129,7 +126,7 @@ p{
     position: relative;   
     text-decoration-line: none; 
 }
-#link{
+#link {
     font-size: 40px;
     margin-top: 10px;
     color: white;
@@ -139,7 +136,7 @@ p{
 /*
     equal height bootstrap columns
 */
-.row{
+.row {
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -150,8 +147,16 @@ p{
     display: flex;
     flex-direction: column;
   }
-
-  .nav ul {
+/*
+  nav bar
+*/
+.nav {
+    float: left;
+   	list-style: none;
+    background-color: transparent;
+    padding-bottom: 20px;
+    }
+.nav ul {
     list-style: none;
     background-color: transparent;
     text-align: center;
@@ -159,14 +164,30 @@ p{
     margin: 0;
   }
   .nav li {
+    float: left;
     font-family: 'Poiret One';
     font-size: 1.2em;
-    line-height: 40px;
-    height: 40px;
-}
-nav a:hover {
-    background-color: #252525;
   }
-nav a {
+  .nav a {
     text-decoration: none;
-  }
+    color: black;
+    display: block;
+  }   
+  .nav a:hover {
+    background-color: transparent;
+    color:  #500303;
+  }   
+  .nav a.active {
+    background-color: #fff;
+    color: #500303;
+    cursor: default;
+  }   
+  @media screen and (min-width: 600px) {
+    .nav li {
+      width: 120px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+    }
+}
