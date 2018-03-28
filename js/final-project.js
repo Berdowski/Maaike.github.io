@@ -31,7 +31,7 @@
 const portofolio = document.getElementById("pf")
 portofolio.addEventListener("click", function(){
   
-  function openNav(evt,navName) {
+  function openNav(event,navName) {
     // Declare all variables
     let i, repo, navContent;
   
@@ -85,12 +85,7 @@ portofolio.addEventListener("click", function(){
           })
   }
 )
- 
-
- 
-    
-
-    
+   
 
 // get the div where the repositories will be added, with id "repo"
        // <div id="repo"></div>
