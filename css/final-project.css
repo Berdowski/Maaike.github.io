@@ -16,6 +16,9 @@ html {
 #portfolio-container {
     display: none; 
 }
+#nav-bar{
+    padding-bottom:50px;
+}
 h2 {
     font-family: 'Poiret One';
     font-size: 60px;
