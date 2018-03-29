@@ -3,26 +3,46 @@
     src: 
 } */
 body {
-    margin:0;
-    padding:0;
+    background: url("../img/background.png") no-repeat center center fixed;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* background-origin: top left; */
+    /* background-size: cover; */
+    /* background-position: fixed; */
+        
+    /* opacity: 0.56;
+    filter:alpha(opacity=56); */
 }
 html {
-    margin:0;
-    padding:0;
+    /* margin:0;
+    padding:0; */
 }
 .cv-container {
-    background-position: fixed;
-    top: 0;
-    left: 0;
+    /* top: 0; */
+    /* left: 0; */
     width: 100%;
     height: 100%;
-    background-image: url("../img/background.png");
+    /* background-image: url("../img/background.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 0.56;
-    filter:alpha(opacity=56);
+    filter:alpha(opacity=56); */
 }
+
+.navigation-button {
+    font-size: 4vw;
+}
+
+/* #cv-container {
+    display: none;
+} */
+
+#portfolio-container {
+    display: none; 
+}
+
 /* .cv{
     font-family: 'Poiret One' bold;
     font-size: 40px;
@@ -75,6 +95,13 @@ h5 {
 p {
     font-family: 'Raleway';
     font-size: 20px;
+    text-align: left;
+    color: #5b5b5b;
+    padding-left: 10px;
+}
+p2 {
+    font-family: 'Raleway';
+    font-size: 30px;
     text-align: left;
     color: #5b5b5b;
     padding-left: 10px;
@@ -163,27 +190,27 @@ p {
     padding: 0;
     margin: 0;
   }
-  .nav li {
+.nav li {
     float: left;
     font-family: 'Poiret One';
     font-size: 1.2em;
   }
-  .nav a {
+.nav a {
     text-decoration: none;
     color: black;
     display: block;
   }   
-  .nav a:hover {
+.nav a:hover {
     background-color: transparent;
     color:  #500303;
   }   
-  .nav a.active {
+.nav a.active {
     background-color: #fff;
     color: #500303;
     cursor: default;
   }   
   @media screen and (min-width: 600px) {
-    .nav li {
+.nav li {
       width: 120px;
       border-bottom: none;
       height: 50px;

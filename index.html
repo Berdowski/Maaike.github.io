@@ -18,19 +18,28 @@
     </head>
 
     <body>
-        
         <div class="cv-container container-fluid">
 
+            <!-- navigation buttons -->
             <div class="nav col-xs-12 col-md-8 col-md-offset-2">
                 <ul>
-                <li class ="cv" onclick="openNav(event,'cv')"><h1 style="font-size:4vw" class="cv"><a href=# ><strong id="cv">CV</strong></a></h1></li>
-                <li class ="pf" onclick="openNav(event,'repo')"><h1 style="font-size:4vw" class="pf"><a href=#><strong id="pf">PORTOFOLIO</strong></a></h1></li>
+                    <li>
+                        <h1 class="navigation-button">
+                            <a href=#><strong id="cv">CV</strong></a>
+                        </h1>
+                    </li>
+                    <li class ="pf">
+                        <h1 class="navigation-button">
+                            <a href=#><strong id="pf">PORTOFOLIO</strong></a>
+                        </h1>
+                    </li>
                 </ul>
             </div>
 
-            <div id="repo" class="navContent"></div>
-            
+            <!-- main display container -->
             <div class="display col-xs-12 col-md-8 col-md-offset-2">
+
+                <!-- personal info - always visible -->
                 <div class="row">
                     <div class="col-xs-12">
                         <h2 style = "font-size: 7vw" id="title"><strong>Maaike Berdowski</strong></h2>
@@ -38,108 +47,123 @@
                         <hr>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <!-- About -->
-                    <div class="col-xs-12 col-md-6">
-                        <h5>About me</h5> 
-                        <p>
+
+                <!-- cv tab -->
+                <div id="cv-container">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>About me</h5> 
+                            <p>
                             Fascinated by nature and everything around me from an early age on, I of course studied Biology. Because my interests reached beyond studying the behaviour of animals, I started learning Javascript, HTML and CSS during a traineeship.
                             <br><br>
-                            I am a a social, humble and collected person. In a working environment I distinguish myself having a accurate and precise work ethic. I posses a high responsibility and am a very reliable teamworker. My hobbies include reading, drawing and sharing my passion for music with others.       
-                        </p>
-                    </div>
+                            I am a a social, humble and collected person. In a working environment I distinguish myself having a accurate and precise work ethic. I posses a high sense of responsibility and am a very reliable teamworker. My hobbies include reading, drawing and sharing my passion for music with others.       
+                            </p>
+                        </div>
 
-                    <!-- Experience -->
-                    <div class="col-xs-12 col-md-6">
-                        <h5>Experience</h5>
-                        <p><strong>2018-now</strong>&nbsp;Junior Software Engineer - Traineeship Embrace IT 
-                        <br>
-                        <strong>2017-2018</strong>&nbsp;Junior Consultant - PMT Groep 
-                        <br> 
-                        <strong>2016-2017</strong>&nbsp;Uitzendkracht - Topselect Groep
-                        <br>
-                        <strong>2013</strong>&nbsp;Student-assistent - Evolutie en Ecologie Utrecht
-                        <br>
-                        <strong>2013</strong>&nbsp;Student-assistent - U-talent dagen Utrecht
-                        <br>
-                        <strong>2012</strong>&nbsp;Assistent researcher - BPRC – TNO Rijswijk
-                        </p>
-                    </div>
+                        <!-- Experience -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Experience</h5>
+                            <p><strong>2018-now</strong>&nbsp;Junior Software Engineer - Traineeship Embrace IT 
+                            <br>
+                            <strong>2017-2018</strong>&nbsp;Junior Consultant - PMT Groep 
+                            <br> 
+                            <strong>2016-2017</strong>&nbsp;Uitzendkracht - Topselect Groep
+                            <br>
+                            <strong>2013</strong>&nbsp;Student-assistent - Evolutie en Ecologie Utrecht
+                            <br>
+                            <strong>2013</strong>&nbsp;Student-assistent - U-talent dagen Utrecht
+                            <br>
+                            <strong>2012</strong>&nbsp;Assistent researcher - BPRC – TNO Rijswijk
+                            </p>
+                        </div>
 
-                    <!-- Education -->
-                    <div class="col-xs-12 col-md-6">
-                        <h5>Education</h5>
-                        <p><strong>2011-2017</strong>&nbsp;&nbsp;&nbsp;Master of Science - Utrecht University
-                        Environmental Biology, track Behavioural Ecology
-                        <br>  
-                        <strong>2006-2011</strong>&nbsp;&nbsp;Bachelor of Science - Utrecht University  
-                        <br>
-                        <strong>2000-2006</strong>&nbsp;Vwo - Grotius College Delft Profiel Natuur en Gezondheid; extra vakken Tekenen en Frans 2 </p>
-                    </div>
+                        <!-- Education -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Education</h5>
+                            <p><strong>2011-2017</strong>&nbsp;&nbsp;&nbsp;Master of Science - Utrecht University
+                            Environmental Biology, track Behavioural Ecology
+                            <br>  
+                            <strong>2006-2011</strong>&nbsp;&nbsp;Bachelor of Science - Utrecht University  
+                            <br>
+                            <strong>2000-2006</strong>&nbsp;Vwo - Grotius College Delft Profiel Natuur en Gezondheid; extra vakken Tekenen en Frans 2 </p>
+                        </div>
 
-                    <!-- Certificates -->
-                    <div class="col-xs-12 col-md-6">
-                        <h5>Certificates</h5>
-                        <p>JavaScript
-                        <br>
-                        HTML
-                        <br>  
-                        CSS  
-                        <br>
-                        JQuery
-                        <br>
-                        TMAP
-                        </p>
+                        <!-- Certificates -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Certificates</h5>
+                            <p>JavaScript
+                            <br>
+                            HTML
+                            <br>  
+                            CSS  
+                            <br>
+                            JQuery
+                            <br>
+                            TMAP
+                            </p>
+                        </div>
+                    </div> 
+
+                    <!-- Skills -->
+                    <div class="col-xs-12">
+                        <h5 class="skills">Skills</h5>  
+                        <hr>  
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                                <span class="progress-type">HTML</span>
+                                <span class="progress-completed">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                                <span class="progress-type">CSS</span>
+                                <span class="progress-completed">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete</span>
+                                </div>
+                                <span class="progress-type">JavaScript</span>
+                                <span class="progress-completed">40%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                                <span class="progress-type">jQuery</span>
+                                <span class="progress-completed">60%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                                <span class="progress-type">TMAP</span>
+                                <span class="progress-completed">20%</span>
+                            </div>
                     </div>
-                </div> 
-                <!-- Skills -->
-                <div class="col-xs-12">
-                    <h5 class="skills">Skills</h5>  
-                    <hr>  
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                                <span class="sr-only">60% Complete</span>
-                            </div>
-                            <span class="progress-type">HTML</span>
-                            <span class="progress-completed">60%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only">60% Complete</span>
-                            </div>
-                            <span class="progress-type">CSS</span>
-                            <span class="progress-completed">60%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                <span class="sr-only">40% Complete</span>
-                            </div>
-                            <span class="progress-type">JavaScript</span>
-                            <span class="progress-completed">40%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                <span class="sr-only">60% Complete</span>
-                            </div>
-                            <span class="progress-type">jQuery</span>
-                            <span class="progress-completed">60%</span>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                <span class="sr-only">20% Complete</span>
-                            </div>
-                            <span class="progress-type">TMAP</span>
-                            <span class="progress-completed">20%</span>
-                        </div>
-                </div> 
+                </div>
+
+                <!-- portfolio tab -->
+                <div id="portfolio-container">
+                    
+                    <div id="repo">                        
+                    </div>
+                </div>
+
             </div>
+
+            <!-- Contact -->
             <div class="col-xs-8 col-xs-offset-4 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-xl-6 col-xl-offset-6">
-            <a href="http://www.linkedin.com/in/maaikeberdowski" i class="fab fa-linkedin" id="link"></a>
-            <a href="mailto:m.s.berdowski@gmail.com" i class="fas fa-envelope"id="mail"></a>
-            <a href="tel:+31610111523" i class="fas fa-phone"id="phone"></a>
+                <a href="http://www.linkedin.com/in/maaikeberdowski" i class="fab fa-linkedin" id="link"></a>
+                <a href="mailto:m.s.berdowski@gmail.com" i class="fas fa-envelope"id="mail"></a>
+                <a href="tel:+31610111523" i class="fas fa-phone"id="phone"></a>
             </div>
         </div>
+
 
         <!-- vendor js -->
         <script src="./vendor/js/jquery-3.3.1.min.js"></script>
