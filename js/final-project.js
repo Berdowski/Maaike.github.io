@@ -14,10 +14,14 @@
     // get the portfolio button element with id "portfolio"
 
     const portfolioButton = document.getElementById("pf")
+
     // get the portfolio container element with id "portfolio-container"
+
     const containerPortfolio = document.getElementById("portfolio-container")
 
-
+    // add onclick event listeners to both buttons that, when clicked, hide 
+    // the currently shown container and show the target container
+    
     portfolioButton.addEventListener("click", function(){
         containerPortfolio.style.display = "block";
         containerCv.style.display = "none";
@@ -27,11 +31,6 @@
         containerCv.style.display = "block";
         containerPortfolio.style.display="none";
         })
-
-
-
-    // add onclick event listeners to both buttons that, when clicked, hide 
-    // the currently shown container and show the target container
 
     /*
      *  Loading GitHub data!
@@ -53,16 +52,16 @@
     //   append the HTML element to the "portfolio-container" div
 
 
-        const repositoryName = document.createElement("h2")
+        const repositoryName = document.createElement("h6")
         repositoryName.innerText = repo.name
         repoDiv.appendChild(repositoryName)
 
         const repositoryLanguage = document.createElement("p2")
-        repositoryLanguage.innerText = repo.language
+        repositoryLanguage.innerText = "Language: " + repo.language
         repoDiv.appendChild(repositoryLanguage)
 
         const repositoryDescription = document.createElement("p")
-        repositoryDescription.innerText = repo.description
+        repositoryDescription.innerText = "Description: " + repo.description
         repoDiv.appendChild(repositoryDescription)
 
         const repository = document.createElement("div")
