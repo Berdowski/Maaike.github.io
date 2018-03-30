@@ -3,8 +3,10 @@
     <head>
         <!-- Required meta tags, do not touch! -->
         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One|Raleway" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
 
         <!-- Title -->
         <title>Embrace - Final Project</title>
@@ -12,106 +14,157 @@
         <!-- CSS -->
         <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
         <link rel="stylesheet" href="./vendor/css/bootstrap.min.css">
-        <link rel="stylesheet" href="./vendor/css/fontawesome-all.min.css">
         <link rel="stylesheet" href="./css/final-project.css">
     </head>
-    
+
     <body>
-        <div class="container-fluid">
-            <div class="header">
-                <div class="row">
-                    <div class="info col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                        <h1><strong>JORARD ANDRINGA</strong></h1>
-                        <h2><strong>Solution Architect</strong></h2>
-                    </div>
-                </div>
+        <div class="cv-container container-fluid">
+
+            <!-- navigation buttons -->
+            <div class="nav col-xs-12 col-md-8 col-md-offset-2" id="nav-bar">
+                <ul>
+                    <li>
+                        <h1 class="navigation-button">
+                            <a><strong id="cv">CV</strong></a>
+                        </h1>
+                    </li>
+                    <li class ="pf">
+                        <h1 class="navigation-button">
+                            <a><strong id="pf">PORTFOLIO</strong></a>
+                        </h1>
+                    </li>
+                </ul>
             </div>
 
-            <div class="body">
+            <!-- main display container -->
+            <div class="display col-xs-12 col-md-8 col-md-offset-2">
+
+                <!-- personal info - always visible -->
                 <div class="row">
-                    <div class="tabs col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                        <div class="tab active" id="tab-cv">
-                            <span class="fa-stack fa-1x">
-                                <i class="fa fa-fw fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-fw fa-file-alt fa-stack-1x fa-inverse"></i>
-                            </span>
-                            CV
-                        </div>
-                        <div class="tab" id="tab-portfolio">
-                            <span class="fa-stack fa-1x">
-                                <i class="fa fa-fw fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-fw fa-folder-open fa-stack-1x fa-inverse"></i>
-                            </span>
-                            Portfolio
-                        </div>
+                    <div class="col-xs-12">
+                        <h2 id="title"><strong>Maaike Berdowski</strong><img src="../img/embrace beeldmerk.png"></img></h2>
+                        
+                        <h3 id="name"><strong>Junior Software Engineer with a passion for nature</strong></h3>
+                        <hr>
                     </div>
                 </div>
-                
-                <div class="row">
-                    <div class="display col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
-                        <div class="cv">
-                            <div id="core-qualities">
-                                <h3>Core Qualities</h3>
-                                <hr>Studious | Driven | Precise | Patient | Sociable
-                            </div>
 
-                            <div id="experience">
-                                <h3>Experience</h3>
-                                <hr>
-                            </div>
-                            
-                            <div id="education">
-                                <h3>Education</h3>
-                                <hr>
-                            </div>
-                            
-                            <div id="courses">
-                                <h3>Courses</h3>
-                                <hr>
-                            </div>
-        
-                            <div id="skills">
-                                <h3>Skills</h3>
-                                <hr>
-        
-                                <div class="row">
-                                    <div class="col-md-6" id="technology">
-                                        <h4>Technology</h4>
-                                    </div>
-            
-                                    <div class="col-md-6" id="languages">
-                                        <h4>Languages</h4>
-                                    </div>
+                <!-- cv tab -->
+                <div id="cv-container">
+                    <div class="row">
+                        <!-- About -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>About me</h5> 
+                            <p>
+                            Fascinated by nature and everything around me from an early age on, I of course studied Biology. Because my interests reached beyond studying the behaviour of animals, I started learning Javascript, HTML and CSS during a traineeship at the PMT group.
+                            <br><br>
+                            I am a a social, humble and collected person. In a working environment I distinguish myself having an accurate and precise work ethic. I possess a high sense of responsibility and am a very reliable teamworker. My hobbies include venturing into nature, reading, drawing and sharing my passion for music with others.       
+                            </p>
+                        </div>
+
+                        <!-- Experience -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Experience</h5>
+                            <p><strong>2018-now</strong>&nbsp;Junior Software Engineer - Traineeship Embrace IT 
+                            <br>
+                            <strong>2017-2018</strong>&nbsp;Junior Consultant - PMT Groep 
+                            <br> 
+                            <strong>2016-2017</strong>&nbsp;Temporary agency worker - Topselect Groep
+                            <br>
+                            <strong>2013</strong>&nbsp;Student-assistant - Evolution and Ecology Utrecht
+                            <br>
+                            <strong>2013</strong>&nbsp;Student-assistant - U-talent days Utrecht
+                            <br>
+                            <strong>2012</strong>&nbsp;Assistant researcher - BPRC – TNO Rijswijk
+                            </p>
+                        </div>
+
+                        <!-- Education -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Education</h5>
+                            <p><strong>2011-2017</strong>&nbsp;&nbsp;&nbsp;Master of Science - Utrecht University
+                            Environmental Biology, track Behavioural Ecology
+                            <br>  
+                            <strong>2006-2011</strong>&nbsp;&nbsp;Bachelor of Science - Utrecht University  
+                            <br>
+                            <strong>2000-2006</strong>&nbsp;Vwo - Grotius College Delft Profiel Natuur en Gezondheid</p>
+                        </div>
+
+                        <!-- Certificates -->
+                        <div class="col-xs-12 col-md-6">
+                            <h5>Certificates</h5>
+                            <p>JavaScript
+                            <br>
+                            HTML
+                            <br>  
+                            CSS  
+                            <br>
+                            JQuery
+                            <br>
+                            TMAP
+                            </p>
+                        </div>
+                    </div> 
+
+                    <!-- Skills -->
+                    <div class="col-xs-12">
+                        <h5 class="skills">Skills</h5>  
+                        <hr>  
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+                                    <span class="sr-only">60% Complete</span>
                                 </div>
+                                <span class="progress-type">HTML</span>
+                                <span class="progress-completed">60%</span>
                             </div>
-
-                            <div id="about">
-                                <h3>About Me</h3>
-                                <hr>I enjoy exercising. I frequently go on hiking trips (preferably in the mountains), and enjoy running. I am also a novice guitar player who plays both electric and acoustic guitars. If I have any spare time left I enjoy a good book or video game.
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                                <span class="progress-type">CSS</span>
+                                <span class="progress-completed">60%</span>
                             </div>
-
-                            <div id="contact">
-                                <h3>Contact</h3>
-                                <hr>
-                                <p>
-                                    mail: <a href="mailto:andringa@pmtgroep.nl">andringa@pmtgroep.nl</a>
-                                </p>
-                                <p>
-                                    phone: +31 6 18 22 000 9
-                                </p>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                    <span class="sr-only">40% Complete</span>
+                                </div>
+                                <span class="progress-type">JavaScript</span>
+                                <span class="progress-completed">40%</span>
                             </div>
-                        </div>
-
-                        <div class="portfolio">
-                            <div id="repositories">
-                                <h3>GitHub Repositories</h3>
-                                <hr>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                                    <span class="sr-only">60% Complete</span>
+                                </div>
+                                <span class="progress-type">jQuery</span>
+                                <span class="progress-completed">60%</span>
                             </div>
-                        </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
+                                    <span class="sr-only">20% Complete</span>
+                                </div>
+                                <span class="progress-type">TMAP</span>
+                                <span class="progress-completed">20%</span>
+                            </div>
                     </div>
                 </div>
+
+                <!-- portfolio tab -->
+                <div id="portfolio-container">
+                    
+                    <div id="repo">                        
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Contact -->
+            <div class="col-xs-8 col-xs-offset-4 col-sm-7 col-sm-offset-5 col-md-7 col-md-offset-5 col-xl-6 col-xl-offset-6">
+                <a href="http://www.linkedin.com/in/maaikeberdowski" i class="fab fa-linkedin" id="link"></a>
+                <a href="mailto:m.s.berdowski@gmail.com" i class="fas fa-envelope"id="mail"></a>
+                <a href="tel:+31610111523" i class="fas fa-phone"id="phone"></a>
             </div>
         </div>
+
 
         <!-- vendor js -->
         <script src="./vendor/js/jquery-3.3.1.min.js"></script>
@@ -121,8 +174,7 @@
         <!-- <script src="./vendor/js/event-monitor-1.0.0.js"></script> -->
 
         <!-- helper functions -->
-        <script src="./js/embrace.js"></script>
-        <script src="./js/github.js"></script>
+        <!-- <script src="./js/embrace.js"></script> -->
 
         <!-- custom js -->
         <script src="./js/final-project.js"></script>
